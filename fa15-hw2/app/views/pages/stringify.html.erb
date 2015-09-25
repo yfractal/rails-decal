@@ -1,0 +1,4 @@
+<%= if (params[:name].blank? or params[:adjective].blank?) then @text;
+    else "#{params[:name]} is so #{params[:adjective]}"
+    end
+    %>
