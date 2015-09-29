@@ -1,0 +1,31 @@
+<h1>Hw3</h1>
+<table>
+  <tr><th>To-do List</th>
+  <tr><th>tasks</th><th>finished</th></tr>
+    <tr>
+      <% @todos.each do |todo| %>
+      <td><%= todo.tasks %></td>
+      <td><%= todo.finished %></td>
+    </tr>
+    <% end %>
+</table>
+<table>
+  <tr><th>Users</th>
+  <tr><th>Username</th><th>Email</th><th>Age</th></tr>
+    <tr>
+      <% @users.each do |user| %>
+      <td><%= user.username %></td>
+      <td><%= user.email %></td>
+      <td><%= user.age %></td>
+    </tr>
+    <% end %>
+</table>
+<table>
+  <tr><th>Cats</th>
+  <tr><th>Name</th>
+    <tr>
+      <% @cats.each do |cat| %>
+      <td><%= cat.name %></td>
+    </tr>
+    <% end %>
+</table>
