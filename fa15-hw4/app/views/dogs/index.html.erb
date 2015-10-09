@@ -1,0 +1,15 @@
+<h1>
+<%= link_to "THESE ARE YOUR DOGS", dogs_path %></h1>
+<table border="2">
+  <tr><th>Name</th>
+  <th>Age</th><th>ID</th></tr>
+<% @dogs.each do |d| %>
+<tr>
+<td>  <%= d.name %></td>
+<td>  <%= d.age %></td>
+<td>  <%= d.id %></td>
+  <% end %>
+</tr>
+</table>
+<br>
+<%= image_tag("https://www.petfinder.com/wp-content/uploads/2012/11/dog-how-to-select-your-new-best-friend-thinkstock99062463.jpg", width:'10%')  %>
