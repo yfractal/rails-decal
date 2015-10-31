@@ -1,0 +1,11 @@
+<div class="row marketing">
+  <div class="col-lg-6">
+    <% @users.each do |user| %>
+      <h4><%= user.name %></h4>
+      <p>Badges: <%= user.num_badges %></p>
+    <% end %>
+  </div>
+</div>
+<div class="footer">
+  <p>&copy; Rails Decal 2014</p>
+</div>
